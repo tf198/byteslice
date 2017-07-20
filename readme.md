@@ -27,3 +27,13 @@ bytewise.decode( b.encode(['x', ['y']]) )
 b.decode(b.encode(['x', ['y']]))
 // ['x', ['y']]
 ```
+
+### compatibility
+A change occured in the __bytewise__ encoding somewhere between 0.5 and 1.1 (probably when
+it was refactored to bytewise-core).
+
+* __byteslice__#_0.3.x_ => __bytewise__#_1.1.0_
+* __byteslice__#_0.2.x_ => __bytewise__#_0.5.0_
+
+Mixing versions of bytewise is not advisable so if you are using an old version of bytewise
+ensure you reference the 0.2 branch.
